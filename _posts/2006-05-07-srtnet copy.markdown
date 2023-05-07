@@ -1,24 +1,8 @@
 ---
 layout: default
-title: "Submitted paper to SPL."
+title: "Submitted paper to SPL {^_^}"
 date: 2023-05-05 17:50:00
 categories: main
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+In this paper, we introduce EnhanceBridge, a novel method for speech enhancement (SE) tasks. Our approach is based on a consistency models that ensure any speech states on the same probabilistic flow ordinary differential equation (PF-ODE) path correspond to the same initial state. By integrating the Brownian Bridge process, our model can generate high intelligible speech samples without adversarial training. EnhanceBridge shows slightly better performance than the state-of-the-art diffusion-based model in speech enhancement, while significantly reducing the inference time. Our experiments on multiple datasets demonstrate the effectiveness of EnhanceBridge in speech enhancement. Furthermore, through downstream tasks extensive experiments, including Automatic Speech Recognition (ASR) and Speaker Verification (SV), we demonstrate that En- hanceBridge can effectively support multiple downstream tasks.
