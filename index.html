@@ -2,132 +2,41 @@
 layout: default
 title: {{ site.name }}
 ---
-<style type="text/css">
-  /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
-  a {
-      color: #1772d0;
-      text-decoration: none;
-  }
-
-  a:focus, a:hover {
-      color: #f09228;
-      text-decoration: none;
-  }
-
-  body, td, th {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 400
-  }
-
-  heading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 19px;
-      font-weight: 1000
-  }
-
-  strong {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 800
-  }
-
-  strongred {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      color: 'red';
-      font-size: 16px
-  }
-
-  sectionheading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-      font-weight: 600
-  }
-</style>
 <head>
-    </script>
-    <meta name=viewport content=“width=800”>
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+ 
     <meta charset="utf-8">
-    <style type="text/css">
-        /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
-        a {
-            color: #1772d0;
-            text-decoration: none;
-        }
-
-        a:focus, a:hover {
-            color: #f09228;
-            text-decoration: none;
-        }
-
-        body, td, th {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 16px;
-            font-weight: 400
-        }
-
-        heading {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 19px;
-            font-weight: 1000
-        }
-
-        strong {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 16px;
-            font-weight: 800
-        }
-
-        strongred {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            color: 'red';
-            font-size: 16px
-        }
-
-        sectionheading {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 22px;
-            font-weight: 600
-        }
-    </style>
 </head>
 <body>
-
-<table width="1000" border="0" align="center" cellspacing="0" cellpadding="20">
-    <tr>
-        <td>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tr>
-                    <td>
-                        <heading>News</heading>
-                    </td>
+<table width="100" border="0" align="center" cellspacing="0" cellpadding="20" style="color:black">
+         
+  <tr>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+            <td>
+                <heading style="color:black" >News & Blogs</heading>
+            </td>
+        </tr>
+        <tr>
+          <table class="news-table" width="100%" align="center" border="0" style="text-align: justify">
+            <colgroup>
+                <col width="15%">
+                <col width="85%">
+            </colgroup>
+                {% for post in site.posts %}
+                <tr style="color:black">
+                  <td valign="top" align="center">{{ post.date | date_to_string }}</td>
+                  <td><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></td>
                 </tr>
-            </table>
-
-            <table class="news-table" width="100%" align="center" border="0" style="text-align: justify">
-                <colgroup>
-                    <col width="15%">
-                    <col width="85%">
-                </colgroup>
-                <tbody class="posts">
-
-                    {% for post in site.posts %}
-                    <tr>
-                      <td valign="top" align="center"><strong>{{ post.date | date_to_string }}</strong></td>
-                      <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
-                    </tr>
-                    {% endfor %}
-
-                </tbody>
-            </table>
-
-
+                {% endfor %}
+        </table>
+        </tr>
+    </table>
+    
+   
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tr>
                     <td width="100%" valign="middle">
-                        <heading>Publications</heading>
+                        <heading style="color:black">Publications</heading>
                     </td>
                 </tr>
             </table>
@@ -143,7 +52,7 @@ title: {{ site.name }}
                     </td>
                     <!-- 文本 -->
                     <td valign="top" width="65%">
-                        <p><a href="https://vision.cs.utexas.edu/projects/nvas/">
+                        <p><a href="">
                             <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
                             <heading>SRTNet: Time domain speech enhancement via stochastic refinement</heading>
                         </a><br><strong>Zhibin Qiu</strong>, Mengfan fu, Yinfeng Yu, Lili Yin, Fuchun Sun, Hao huang<br>
