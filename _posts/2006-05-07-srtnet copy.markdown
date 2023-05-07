@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "test"
+title: "Submitted paper to SPL."
 date: 2023-05-05 17:50:00
 categories: main
 ---
