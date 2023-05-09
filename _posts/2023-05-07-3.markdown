@@ -1,0 +1,8 @@
+---
+layout: default
+title: "Read a CVPR paper: Egocentric Audio-Visual Object Localization."
+date: 2023-05-08 17:50:00
+categories: main
+---
+
+![](/image/cvpr.png)
